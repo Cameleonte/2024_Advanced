@@ -16,8 +16,11 @@ for count in range(queries_count):
         elif query[0] == '4':
             print(min(stack))
 
-while stack:
-    if len(stack) == 1:
-        print(stack.pop())
-    else:
-        print(stack.pop(), end=', ')
+# while stack:
+#     if len(stack) == 1:
+#         print(stack.pop())
+#     else:
+#         print(stack.pop(), end=', ')
+
+stack.reverse()
+print(*stack, sep=", ")
